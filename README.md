@@ -1,5 +1,6 @@
 # temp
 
+## conda
 * ```conda -V``` : 檢查版本
 * ```conda update conda``` : 更新conda
 * ```conda env list``` : conda環境列表
