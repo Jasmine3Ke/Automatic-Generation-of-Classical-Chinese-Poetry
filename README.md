@@ -1,4 +1,6 @@
-# temp
+# Automatic Generation of Classical Chinese Poetry Based on Image and Color of Paintings
+
+Research topic: Automatic Generation of Classical Chinese Poetry Based on Image and Color of Paintings
 
 ## To-Do
 * [ ] 導入WMPoetry
