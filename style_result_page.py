@@ -1,3 +1,6 @@
+# Author: Mei-Ren Ke
+# Update: 2022/08/18
+
 import os
 import sys
 import tkinter as tk
@@ -14,7 +17,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from numpy import random
 
-# 1. 規劃整體視窗
+# 規劃整體視窗
 window = tk.Tk()
 window.title('Voting page')
 window.geometry('900x700')
@@ -25,6 +28,7 @@ canvas.place(relx=0.3, rely=0.5, anchor='center')
 
 path = tk.StringVar() # 存路徑
 
+# resize圖片，讓圖片符合canvas
 def resize(image):
     w, h = image.size
     mlength = max(w, h)  # 找出最大的邊
@@ -40,7 +44,8 @@ def show_image(path, name):
     img = ImageTk.PhotoImage(re_image)
     canvas.create_image(200, 200, anchor='center', image=img) # 在畫布上展示圖片，參數: 長, 寬, 位置, 引入圖片
 
-def openpicture(): # open and show image
+# open and show image
+def openpicture():
     global fileindex, fatherpath, files, file_num, filename, filepath
 
     filepath = filedialog.askopenfilename()
@@ -151,7 +156,7 @@ def submit_val():
     show_image(filepath2, files[fileindex])
     filename = files[fileindex]
 
-
+# "select a picture"按鈕
 b = tk.Button(window,text = 'select a picture', command = openpicture)
 b.place(relx=0.3, rely=0.1, anchor='center')
 
@@ -159,25 +164,25 @@ global style_result, style, style_kw
 style=tk.StringVar()
 style.set("風格預測結果：")
 style_label = tk.Label(window, textvariable=style)
-style_label.place(relx = 0.62, rely = 0.2, anchor = 'center')
+style_label.place(relx=0.62, rely=0.2, anchor='center')
 
-style_result=tk.StringVar()
+style_result = tk.StringVar()
 style_result.set("")
 style_result_label = tk.Label(window, textvariable=style_result)
-style_result_label.place(relx = 0.7, rely = 0.2, anchor = 'center')
+style_result_label.place(relx=0.7, rely=0.2, anchor='center')
 
-style_kw=tk.StringVar()
+style_kw = tk.StringVar()
 style_kw.set("風格關鍵詞：")
 style_kw_label = tk.Label(window, textvariable=style_kw)
-style_kw_label.place(relx = 0.615, rely = 0.25, anchor = 'center')
+style_kw_label.place(relx=0.615, rely=0.25, anchor='center')
 
-style_kw_result=tk.StringVar()
+style_kw_result = tk.StringVar()
 style_kw_result.set("")
 style_kw_result_label = tk.Label(window, textvariable=style_kw_result)
-style_kw_result_label.place(relx = 0.7, rely = 0.25, anchor = 'center')
+style_kw_result_label.place(relx=0.7, rely=0.25, anchor='center')
 
 # 提交鍵
-submit = tk.Button(window, text = '提交', command = submit_val)
+submit = tk.Button(window, text='提交', command=submit_val)
 submit.place(relx=0.6, rely=0.8, anchor='center')
 
 window.mainloop()

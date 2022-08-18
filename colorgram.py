@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Author: obskyr/colorgram.py (https://github.com/obskyr/colorgram.py)
+# 用途：extracting colors from images
 
 from __future__ import unicode_literals
 from __future__ import division
@@ -17,7 +19,6 @@ else:
 
 Rgb = namedtuple('Rgb', ('r', 'g', 'b'))
 Hsl = namedtuple('Hsl', ('h', 's', 'l'))
-
 
 class Color(object):
     def __init__(self, r, g, b, proportion):

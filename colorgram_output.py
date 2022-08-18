@@ -1,12 +1,16 @@
+# Author: Mei-Ren Ke
+# Update: 2022/08/18
+# 用途：讀取file中所有圖片，並一張一張進行色彩擷取，再將色彩擷取結果輸出成一個csv檔 (colorgram_output.csv)
+
 import os
 import csv
 import cv2
 import colorgram
 import numpy as np
 
-yourpath = "D:\\專題test" #enter file path
+yourpath = input("輸入資料夾路徑 如：/Users/yourname/Desktop/filename： ")
 allFileList = os.listdir(yourpath)
-number = 0 # set photo num
+number = 0 # set photo number
 
 for file in allFileList:
     print(file)
@@ -37,7 +41,8 @@ for file in allFileList:
         print('proportion: ', round(colors[i].proportion, 4))
 
     print(color_histogram)
-    with open('test.csv', 'a+', newline='') as csvfile:
+    
+    with open('colorgram_output.csv', 'a+', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow([file, color_histogram[0], color_histogram[1], color_histogram[2], color_histogram[3], color_histogram[4], color_histogram[5],
                          color_histogram[6], color_histogram[7], color_histogram[8], color_histogram[9], color_histogram[10], color_histogram[11],
