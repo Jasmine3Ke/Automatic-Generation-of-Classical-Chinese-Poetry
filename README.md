@@ -17,15 +17,11 @@ conda install pillow
 conda install opencv
 ```
 
-### 2. Edit manifests (AndroidMenifest.xml):
+### 2. Execute: 
 ```
-<?xml version="1.0" encoding="utf-8"?>
-<manifest 
-  ...
-  <uses-permission android:name="android.permission.INTERNET" />
-  ...
-</manifest>
+python style_result_page.py
 ```
+視窗出現後，按"select a picture"選圖片
 
 ## Contact
 Feel free to reach me at any time.
