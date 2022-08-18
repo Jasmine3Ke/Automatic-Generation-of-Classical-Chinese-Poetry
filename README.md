@@ -1,5 +1,9 @@
 # temp
 
+## To-Do
+* [ ] 導入WMPoetry
+* [ ] 整合成一個step就可以跑
+
 ## conda
 * ```conda -V``` : 檢查版本
 * ```conda update conda``` : 更新conda
