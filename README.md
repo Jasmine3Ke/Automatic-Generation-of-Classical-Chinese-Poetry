@@ -7,7 +7,7 @@
 * [ ] import WMPoetry
 
 ## Keypoints
-* Compressed a 45-dimensions feature vector via one-hot encoding and inputted to support vector machine (SVM)
+* Compressed a 45-dimensions feature vector via one-hot encoding and inputted to support vector machine
 * Trained support vector machine and conducted style prediction
 
 ## Quick Setup (Basic Usage)
