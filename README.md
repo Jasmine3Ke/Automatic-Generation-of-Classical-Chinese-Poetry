@@ -10,7 +10,7 @@
 * Compressed a 45-dimensions feature vector via one-hot encoding and inputted to support vector machine
 * Trained support vector machine and conducted style prediction
 
-## :see_no_evil:  Quick Setup (Basic Usage)
+## :robot:  Quick Setup (Basic Usage)
 ### 1. Build a virtual environment (Anaconda 4.7.12):
 ``` 
 conda create --name myenv python=3.8.13 
@@ -31,7 +31,7 @@ python style_result_page.py
 * 視窗出現後，按"select a picture"選圖片
 * 按"提交"之後，會開始預測同個資料夾內下一張圖片的風格
 
-## Contact
+## :speech_balloon:  Contact
 Feel free to reach me at any time.
 <pre><code>Email: meirenke4@gmail.com
 LinkedIn: https://www.linkedin.com/in/mei-ren-ke-7136641a5/ </code></pre>
