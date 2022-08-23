@@ -1,16 +1,16 @@
-# :art: Automatic Generation of Classical Chinese Poetry
+# :art:  Automatic Generation of Classical Chinese Poetry
 
 * **Research topic:** Automatic Generation of Classical Chinese Poetry Based on Image and Color of Paintings
 * **Authors:** Mei-Ren Ke, An-Ting Hsieh, I-Cheng Yeh
 
-## To-Do
+## :ballot_box_with_check:  To-Do
 * [ ] import WMPoetry
 
-## Keypoints
+## :kissing_cat:  Keypoints
 * Compressed a 45-dimensions feature vector via one-hot encoding and inputted to support vector machine
 * Trained support vector machine and conducted style prediction
 
-## Quick Setup (Basic Usage)
+## :see_no_evil:  Quick Setup (Basic Usage)
 ### 1. Build a virtual environment (Anaconda 4.7.12):
 ``` 
 conda create --name myenv python=3.8.13 
