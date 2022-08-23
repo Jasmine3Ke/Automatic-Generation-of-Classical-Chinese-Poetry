@@ -1,4 +1,4 @@
-# Automatic Generation of Classical Chinese Poetry
+# :art: Automatic Generation of Classical Chinese Poetry
 
 * **Research topic:** Automatic Generation of Classical Chinese Poetry Based on Image and Color of Paintings
 * **Authors:** Mei-Ren Ke, An-Ting Hsieh, I-Cheng Yeh
