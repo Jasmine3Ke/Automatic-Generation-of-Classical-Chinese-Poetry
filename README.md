@@ -5,7 +5,6 @@
 
 ## To-Do
 * [ ] 導入WMPoetry
-* [ ] 整合成一個step就可以跑
 * [ ] 寫readme中的features, contribution等等
 
 ## Quick Setup (Basic Usage)
